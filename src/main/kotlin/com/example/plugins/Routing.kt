@@ -10,7 +10,11 @@ fun Application.configureRouting() {
 
     routing {
         get("/") {
-                call.respondText("Hello World!")
+
+                call.respondText("Hello World! this is api for notes can use it after register a user account ")
+
             }
+
+
     }
 }

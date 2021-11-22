@@ -25,10 +25,16 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation("io.ktor:ktor-serialization:$ktor_version")
+    implementation("org.mindrot:jbcrypt:0.4")
+    implementation("com.google.code.gson:gson:2.8.9")
 
 
     // ktrom
     implementation("org.ktorm:ktorm-core:3.4.1")
     implementation("mysql:mysql-connector-java:8.0.27")
+
+    // jwt token
+    implementation("io.ktor:ktor-auth:$ktor_version")
+    implementation("io.ktor:ktor-auth-jwt:$ktor_version")
 
 }
